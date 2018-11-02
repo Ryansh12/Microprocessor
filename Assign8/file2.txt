@@ -1,0 +1,13 @@
+nasm -f elf64 Assign8.asm
+ld -o Assign8 Assign8.o
+
+for type:
+./Assign8  type file1.txt
+
+for copy:
+./Assign8  copy file1.txt  file2.txt 
+
+for delete:
+./Assign8  delete file3.txt  
+ls                               ;;to verify file is deleted or not
+
